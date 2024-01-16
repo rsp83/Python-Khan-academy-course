@@ -7,5 +7,6 @@ subject = input("Enter a subject: ")
 
 url = "https://" + language_code + ".khanacademy.org/" + subject
 
-print("Navigate to the page below!")
+print("Navigate to the ") 
+print(subject + " page below!")
 print(url)
