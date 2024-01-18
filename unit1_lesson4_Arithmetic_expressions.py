@@ -7,4 +7,5 @@ fixed_discount = user_float - 12
 
 # Pick the coupon that offers the best discount.
 final_price = min(fixed_discount, percent_discount)
-print("Your best price is $" + str (final_price))
+rounded_final_price = round(final_price, 2)
+print("Your best price is $" + str (rounded_final_price))
