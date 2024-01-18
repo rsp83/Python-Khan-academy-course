@@ -1,11 +1,14 @@
 base_price = input("Enter cart total: ")
-user_float = float(base_price)
+float_base = float(base_price)
+shipping_price = input("Enter shipping total: ")
+float_shipping = float(shipping_price)
 
 # Available coupon codes include 15% off and $12 off.
-percent_discount = user_float- user_float * .15
-fixed_discount = user_float - 12
+percent_discount = float_base- float_base * .15
+fixed_discount = float_base - 12
 
 # Pick the coupon that offers the best discount.
 final_price = min(fixed_discount, percent_discount)
-rounded_final_price = round(final_price, 2)
+final_price_with_shipping = final_price + float_shipping
+rounded_final_price = round(final_price_with_shipping, 2)
 print("Your best price is $" + str (rounded_final_price))
