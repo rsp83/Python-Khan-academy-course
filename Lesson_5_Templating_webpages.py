@@ -15,7 +15,7 @@ page_header = header_title + header_subtitle + header_content
 
 # Construct the main profile page content.
 section_title = "<h2>About guest:"+email+"!</h2>"
-section_text = "<p>This is a cool bio.</p>"
+section_text = first_name + "<p>this is a cool bio.</p>"
 section_footer = "<p>Notifications: 4</p>"
 button = "<button>Like</button>"
 page_content = section_title + section_text + button + section_footer
