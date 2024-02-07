@@ -1,3 +1,4 @@
+
 day = int(input("Enter a day (1-31): "))
 if day < 1 or day > 31:
     print("Error. Day must be between 1 and 31.")
