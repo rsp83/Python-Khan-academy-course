@@ -1,6 +1,8 @@
 answer = input("What data type is the value 6.3? ")
 if answer == "float":
-    print("You got it!")
+    print("You got it!") 
+if answer == "string":
+    print("Integers can't have decimals.")
 else:
     print("The correct answer is: float.")
 
