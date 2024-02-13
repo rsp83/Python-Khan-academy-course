@@ -4,6 +4,12 @@ has_pet = input("Do you have a pet (yes/no)? ")
 if has_pet == "yes":
     # Pets consume resources like water, litter, and toys. 
     footprint = footprint + 5
+    meat = input("Does your pet’s food contains meat (yes/no)? ")
+    if meat == "yes":
+        footprint = footprint + 10
+    else:
+        pass
+    
 
 days = int(input("How many days a week do you commute to school or work? "))
 transport = input("Do you commute by foot, bike, bus, train, or car? ")
