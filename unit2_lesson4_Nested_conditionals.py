@@ -14,8 +14,12 @@ days = int(input("How many days a week do you commute to school or work? "))
 if days > 0:
     transport = input("Do you commute by foot, bike, bus, train, or car? ")
     if transport == "car":
-     footprint = footprint + (8 * days)
-else:
-    pass
+        footprint += (8 * days)
+    elif transport == "bus" or transport == "train":
+        footprint += (4 * days)
+    elif transport == "bike" or transport == "foot":
+        footprint =+ days
+    else:
+        pass
 
 print("Your environmental footprint score is " + str(footprint) + ".")
