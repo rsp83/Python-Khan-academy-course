@@ -22,16 +22,16 @@ else:
     if favorite_subject == "computing" or favorite_subject == "art":
         rec = pixar
 
-    if favorite_subject == "engineering" or favorite_subject == "physics":
+    elif favorite_subject == "engineering" or favorite_subject == "physics":
         rec = science
 
-    if favorite_subject == "history" or favorite_subject == "literature":
+    elif favorite_subject == "history" or favorite_subject == "literature":
         rec = documentaries
 
-    if favorite_subject == "biology" or favorite_subject == "ecology":
+    elif favorite_subject == "biology" or favorite_subject == "ecology":
         rec = nature_shows
 
-    if favorite_subject == "psychology" or favorite_subject == "sociology":
+    elif favorite_subject == "psychology" or favorite_subject == "sociology":
         rec = human_interest_stories
     else:
         # Most broadly relevant and approachable subject.
