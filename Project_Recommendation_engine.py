@@ -12,12 +12,15 @@ science = "Science"
 # Collect user attributes to inform our recommendation.
 grade = int(input("What grade are you in? "))
 favorite_subject = input("What is your favorite subject? ")
+learning_pace = input("What is your learning pace like ? ")
 
 # Make a course recommendation based on the user's attributes.
 rec = ""
 if grade < 6:
     # Course caters to younger learners.
     rec = grammar
+elif learning_pace == "slow":
+    rec = "Time Management Strategies"
 else:
     if favorite_subject == "computing" or favorite_subject == "art":
         rec = pixar
