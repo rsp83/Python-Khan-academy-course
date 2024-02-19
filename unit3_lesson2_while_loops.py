@@ -1,9 +1,10 @@
 import random
 
 running_total = 0
+repeat = int(input("How many times you would like to repeat the experiment ? "))
 
 i = 1
-while i <= 10 :
+while i <= repeat :
    first_die = random.randint(1, 6)
    second_die = random.randint(1, 6)
 
@@ -12,5 +13,5 @@ while i <= 10 :
    running_total += dice_sum
    i += 1
 
-average = running_total / 10 
+average = running_total / repeat 
 print ("Average of " + str(average))
