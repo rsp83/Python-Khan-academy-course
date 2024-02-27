@@ -6,7 +6,7 @@ num_cooks = 2
 
 waiting_to_order = 0
 waiting_for_food = 0
-
+served_food = 0
 for minute in range(300):
 
 # Customers arrive every minute and line up to order.
@@ -21,6 +21,7 @@ for minute in range(300):
     waiting_to_order = waiting_to_order - new_orders
     waiting_for_food = waiting_for_food + new_orders
     waiting_for_food = waiting_for_food - done_orders
+    served_food = served_food + done_orders
     
 
     
@@ -28,3 +29,4 @@ for minute in range(300):
 
     print(str(waiting_to_order) + " customers waiting to order.")
     print(str(waiting_for_food) + " customers waiting for food.")
+    print(str(served_food) + " costumers served.")
