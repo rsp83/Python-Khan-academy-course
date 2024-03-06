@@ -9,6 +9,18 @@ def get_time_trophy(hours_played):
 
     return trophy_name
 
-hours_played = 15
+hours_played = 2
+trophy_Name = get_time_trophy(hours_played)
+print(trophy_Name)
+
+hours_played = 11
+trophy_Name = get_time_trophy(hours_played)
+print(trophy_Name)
+
+hours_played = 33
+trophy_Name = get_time_trophy(hours_played)
+print(trophy_Name)
+
+hours_played = 55
 trophy_Name = get_time_trophy(hours_played)
 print(trophy_Name)
