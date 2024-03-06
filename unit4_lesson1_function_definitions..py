@@ -1,7 +1,9 @@
 def get_time_trophy(hours_played):
 
     if hours_played >= 50:
-        trophy_name = "Valiant Veteran"
+        trophy_name = "Valiant Veteran" 
+    elif hours_played >= 24:
+        trophy_name = "Humble Hero"           
     elif hours_played >= 10:
         trophy_name = "Active Adventurer"
     else:
