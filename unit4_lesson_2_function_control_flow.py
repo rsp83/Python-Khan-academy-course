@@ -15,7 +15,10 @@ def get_apple_score(num_apples, has_poison_apple):
     """Returns a player's score based on the number of apple cards.
     The poison apple card turns the apple score negative.
     """
-    return num_apples * 2
+    if has_poison_apple is True:
+        return num_apples * -2
+    else:
+        return num_apples * 2
 
 def get_score(bananas, apples, has_poison_apple):
     """Returns a player's total score based on their cards of each type."""
