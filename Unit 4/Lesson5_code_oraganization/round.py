@@ -1,4 +1,6 @@
 """Supports a round of rock, paper, scissors between a user and a computer."""
+import random
+
 
 def make_user_choice():
     """Returns the user's choice of rock, paper, or scissors.
@@ -10,7 +12,14 @@ def make_computer_choice():
     """Returns the computer's choice of rock, paper, or scissors.
     The computer chooses randomly, with each choice equally likely.
     """
-    return "scissors"
+
+    choice = random.randint(1, 3)
+    if choice == int(1) :
+      return "rock"          
+    elif choice == int(2) :
+      return "paper"
+    else :
+      return "scissors"
 
 def wins_matchup(choice, opponent_choice):
     """Returns True if the first player's choice wins over their opponent.
