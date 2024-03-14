@@ -25,7 +25,13 @@ def wins_matchup(choice, opponent_choice):
     """Returns True if the first player's choice wins over their opponent.
     Choices can be rock, paper, or scissors. Assumes the choices are different.
     """
-    return choice == "rock"
+    if choice == "rock" and opponent_choice == "scissors" or \
+       choice == "paper" and opponent_choice == "rock" or \
+       choice == "scissors" and opponent_choice == "paper":
+       return True
+    else:
+        return False
+
 
 def format_score(user_score, computer_score):
     """Returns a formatted version of the players's current scores."""
