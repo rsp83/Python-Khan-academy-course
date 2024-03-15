@@ -5,6 +5,7 @@ def move(position, speed):
     The ball moves in straight line at the given speed.
     """
     return position + speed
+    if position > output_width = stop ball
 
 def maybe_bounce(position, speed, right_wall):
     """Returns the ball's new speed, which stays the same unless the ball
